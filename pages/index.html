@@ -15,6 +15,7 @@
   <!-- Custom fonts for this template -->
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
     type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
   <!-- Custom styles for this page -->
   <link rel="stylesheet" href="../css/landing-page.css">
@@ -71,24 +72,58 @@
   </nav>
 
 
-  <!-- Masthead -->
-  <header class="masthead text-white text-center" style=" background: url(../img/bg-masthead.jpg) no-repeat center center;
+
+  <section class="showcase" style=" background: url(../img/bg-masthead.jpg) no-repeat center center;
   background-size: cover;">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-9 mx-auto">
-          <h1 class="wow bounceInRight" class="mb-5">¡Bienvenido a Trop Smart!</h1>
-          <h4 class="wow bounceInRight" class="mb-5">Empieza a generar ingresos como transportista o contrata servicios
-            de transporte de una manera rápida
-            y sencilla.</h4>
-          <a class="btn btn-primary m-5" href="register.html">
-            <h5> Empieza ya </h5>
-          </a>
+    <div class="container" style="padding-top: 50px;">
+      <div class="row no-gutters">
+        <div class="col-sm-6 my-auto showcase-text">
+            <div style="justify-content: center;" >
+              <h1 class="wow bounceInRight" class="mb-5" style="color: #fff;">¡Bienvenido a Trop Smart!</h1>
+
+              <h2 class="wow bounceInRight"  style="color: #fff;">Solicita servicio de transporte de forma rapida</h2>
+              <h2>&nbsp;</h2>
+              <h4 class="wow bounceInRight" class="mb-5" style="color: #fff;">Empieza a generar ingresos como transportista o contrata servicios
+                de transporte de una manera rápida
+                y sencilla.</h4>
+            </div>
+            <a class="btn btn-primary m-5" href="https://play.google.com/store/apps/details?id=com.softper.tropsmart">
+              <h5> Descárgelo ahora </h5>
+            </a>
+        </div>
+        <div class="col-lg-6 order-lg-2 text-white showcase-img">
+          <div id="carouselExampleSlidesOnly" class="wow fadeIn" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="../img/android_set1.png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../img/android_set2.png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../img/android_set3.png" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../img/android_set4.png" alt="Fourth slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../img/android_set5.png" alt="Fifth slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../img/android_set6.png" alt="Sixth slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../img/android_set7.png" alt="Sevent slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../img/android_set8.png" alt="Eigth slide">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </header>
+  </section>
 
   <section class="showcase">
     <div class="container-fluid p-0">
@@ -434,6 +469,44 @@
   <script src="../vendor/jquery/jquery.min.js"></script>
   <script src="../vendor/popper/popper.min.js"></script>
   <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.carousel').carousel({
+        interval: 500
+      })
+    });
+  </script>
+
+  <style>
+    .carousel-fade .carousel-item {
+ opacity: 0;
+ transition-duration: .6s;
+ transition-property: opacity;
+}
+
+.carousel-fade  .carousel-item.active,
+.carousel-fade  .carousel-item-next.carousel-item-left,
+.carousel-fade  .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade  .active.carousel-item-right {
+ opacity: 0;
+}
+
+.carousel-fade  .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade  .active.carousel-item-prev {
+ transform: translateX(0);
+ transform: translate3d(0, 0, 0);
+}
+
+
+  </style>
 
 </body>
 
